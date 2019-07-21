@@ -40,7 +40,7 @@ public class Trace{
      */
     public static String Info(String message) {
         init();
-        return write.Write(message, TrackingState.Debug);
+        return write.Write(message, TrackingState.Info);
     }
 
     /**
@@ -50,7 +50,7 @@ public class Trace{
      */
     public static String Warning(String message) {
         init();
-        return write.Write(message, TrackingState.Debug);
+        return write.Write(message, TrackingState.Warning);
     }
 
     /**
@@ -60,6 +60,6 @@ public class Trace{
      */
     public static String Error(String message) {
         init();
-        return write.Write(message, TrackingState.Debug);
+        return write.Write(message, TrackingState.Error);
     }
 }
