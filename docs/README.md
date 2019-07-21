@@ -49,11 +49,9 @@ class App{
     }
 }
 ```
->
+> Output
 
-```
 <span style="color:green">This Debug Message</span>
 <span style="color:cyan">This Info Message</span>
 <span style="color:yellow">This Warning Message</span>
 <span style="color:red">This Error Message</span>
-```
