@@ -51,4 +51,4 @@ class App{
 ```
 > Output
 
-![Trace Console Screen](media/console-screen.png)
+![Trace Console Screen](media/console-screen.PNG)
