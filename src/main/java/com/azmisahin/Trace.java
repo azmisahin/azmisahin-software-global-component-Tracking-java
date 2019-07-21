@@ -5,44 +5,61 @@ package com.azmisahin;
  */
 public class Trace{
 
-    private Writer write;
+    // Static
+    private static Writer write;
 
     /**
      * Trace
      */
-    public Trace(){
+    protected Trace(){
+        init();
+    }
+
+    // Initalizer
+    private static void init(){
+        
+        // Instance Create
+        if(write == null)
         write = new Writer();
     }
 
     /**
      * Debug Write
      * @param message Message Text
+     * @return String Written message
      */
-    public void Debug(String message) {
-        write.Write(message, TrackingState.Debug);
+    public static String Debug(String message) {
+        init();
+        return write.Write(message, TrackingState.Debug);
     }
 
     /**
      * Info Write
      * @param message Message Text
+     * @return String Written message
      */
-    public void Info(String message) {
-        write.Write(message, TrackingState.Debug);
+    public static String Info(String message) {
+        init();
+        return write.Write(message, TrackingState.Debug);
     }
 
     /**
      * Warning Write
      * @param message Message Text
+     * @return String Written message
      */
-    public void Warning(String message) {
-        write.Write(message, TrackingState.Debug);
+    public static String Warning(String message) {
+        init();
+        return write.Write(message, TrackingState.Debug);
     }
 
     /**
      * Error Write
      * @param message Message Text
+     * @return String Written message
      */
-    public void Error(String message) {
-        write.Write(message, TrackingState.Debug);
+    public static String Error(String message) {
+        init();
+        return write.Write(message, TrackingState.Debug);
     }
 }

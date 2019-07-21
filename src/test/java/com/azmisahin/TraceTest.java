@@ -26,10 +26,44 @@ public class TraceTest extends TestCase{
     }
 
     /**
-     * Rigourous Test :-)
+     * Debug Test :-)
      */
-    public void testTrace()
+    public void testTraceDebug()
     {
-        assertTrue( true );
+        String actual = Trace.Debug("Test");
+
+        assertNotNull( actual );
+    }
+
+    /**
+     * Info Test :-)
+     */
+    public void testTraceInfo()
+    {
+        String actual = Trace.Info("Test");
+
+        assertNotNull( actual );
+    }    
+
+
+    /**
+     * Warning Test :-)
+     */
+    public void testTraceWarning()
+    {
+        String actual = Trace.Warning("Test");
+
+        assertNotNull( actual );
+    }
+
+    
+    /**
+     * Error Test :-)
+     */
+    public void testTraceError()
+    {
+        String actual = Trace.Error("Test");
+
+        assertNotNull( actual );
     }
 }
